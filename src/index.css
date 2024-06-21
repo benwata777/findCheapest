@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.comparison-table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-row,
+.data-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.header-cell,
+.data-cell {
+  flex: 1;
+  text-align: center;
+}
+
+.header-row {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.unit-price {
+  text-align: center;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Kanit", sans-serif; /* เพิ่มบรรทัดนี้ */
+}
+
+button:hover {
+  background-color: #5a6268;
+}
+
+footer {
+  margin-top: 40px;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .comparison-table {
+    max-width: 100%;
+  }
+
+  .header-row,
+  .data-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-cell,
+  .data-cell {
+    width: 25%;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    width: 95%;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
